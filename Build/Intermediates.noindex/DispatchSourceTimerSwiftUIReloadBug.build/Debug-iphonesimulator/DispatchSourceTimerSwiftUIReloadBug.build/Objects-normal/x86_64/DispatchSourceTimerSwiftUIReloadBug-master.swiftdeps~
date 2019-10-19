@@ -1,0 +1,10 @@
+version: "Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
+options: "fb3cb837840d4aaf06340e8ae48251d5"
+build_time: [1571463734, 611729000]
+inputs:
+  "/Users/Dominik/Documents/Programmieren/Xcode Projects/DispatchSourceTimerSwiftUIReloadBug/DispatchSourceTimerSwiftUIReloadBug/TimerView.swift": [1571463734, 538360677]
+  "/Users/Dominik/Documents/Programmieren/Xcode Projects/DispatchSourceTimerSwiftUIReloadBug/DispatchSourceTimerSwiftUIReloadBug/AppDelegate.swift": [1571459903, 92731059]
+  "/Users/Dominik/Documents/Programmieren/Xcode Projects/DispatchSourceTimerSwiftUIReloadBug/DispatchSourceTimerSwiftUIReloadBug/LaunchTimerView.swift": [1571460434, 395580524]
+  "/Users/Dominik/Documents/Programmieren/Xcode Projects/DispatchSourceTimerSwiftUIReloadBug/DispatchSourceTimerSwiftUIReloadBug/SceneDelegate.swift": [1571461029, 849188042]
+  "/Users/Dominik/Documents/Programmieren/Xcode Projects/DispatchSourceTimerSwiftUIReloadBug/DispatchSourceTimerSwiftUIReloadBug/ContentView.swift": [1571463521, 119458953]
+  "/Users/Dominik/Documents/Programmieren/Xcode Projects/DispatchSourceTimerSwiftUIReloadBug/DispatchSourceTimerSwiftUIReloadBug/WatchTimer.swift": [1571460210, 957500545]
