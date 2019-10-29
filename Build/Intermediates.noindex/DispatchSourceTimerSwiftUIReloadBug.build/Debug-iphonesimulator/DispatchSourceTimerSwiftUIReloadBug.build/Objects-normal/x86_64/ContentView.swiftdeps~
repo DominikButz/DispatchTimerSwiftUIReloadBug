@@ -23,13 +23,12 @@ depends-top-level:
 - !private "StringLiteralType"
 - !private "TabView"
 - !private "Text"
+- "TimerManager"
 - !private "TimerView"
 - "View"
-- "WatchTimer"
 depends-member:
 - !private ["35DispatchSourceTimerSwiftUIReloadBug11ContentViewV", "$selectedMenuIndex"]
 - !private ["35DispatchSourceTimerSwiftUIReloadBug11ContentViewV", "$timerViewPresenting"]
-- ["35DispatchSourceTimerSwiftUIReloadBug11ContentViewV", "$watchTimer"]
 - ["35DispatchSourceTimerSwiftUIReloadBug11ContentViewV", "Body"]
 - ["35DispatchSourceTimerSwiftUIReloadBug11ContentViewV", "EnvironmentObject"]
 - !private ["35DispatchSourceTimerSwiftUIReloadBug11ContentViewV", "Image"]
@@ -37,15 +36,14 @@ depends-member:
 - ["35DispatchSourceTimerSwiftUIReloadBug11ContentViewV", "State"]
 - !private ["35DispatchSourceTimerSwiftUIReloadBug11ContentViewV", "TabView"]
 - !private ["35DispatchSourceTimerSwiftUIReloadBug11ContentViewV", "Text"]
+- ["35DispatchSourceTimerSwiftUIReloadBug11ContentViewV", "TimerManager"]
 - !private ["35DispatchSourceTimerSwiftUIReloadBug11ContentViewV", "TimerView"]
 - ["35DispatchSourceTimerSwiftUIReloadBug11ContentViewV", "View"]
-- ["35DispatchSourceTimerSwiftUIReloadBug11ContentViewV", "WatchTimer"]
 - ["35DispatchSourceTimerSwiftUIReloadBug11ContentViewV", "_Default_Body"]
 - ["35DispatchSourceTimerSwiftUIReloadBug11ContentViewV", "_makeView"]
 - ["35DispatchSourceTimerSwiftUIReloadBug11ContentViewV", "_makeViewList"]
 - !private ["35DispatchSourceTimerSwiftUIReloadBug11ContentViewV", "_selectedMenuIndex"]
 - !private ["35DispatchSourceTimerSwiftUIReloadBug11ContentViewV", "_timerViewPresenting"]
-- !private ["35DispatchSourceTimerSwiftUIReloadBug11ContentViewV", "_watchTimer"]
 - ["35DispatchSourceTimerSwiftUIReloadBug11ContentViewV", "body"]
 - ["35DispatchSourceTimerSwiftUIReloadBug11ContentViewV", "deinit"]
 - ["35DispatchSourceTimerSwiftUIReloadBug11ContentViewV", "init"]
@@ -64,7 +62,6 @@ depends-member:
 - ["35DispatchSourceTimerSwiftUIReloadBug20ContentView_PreviewsV", "previews"]
 - ["7SwiftUI15DynamicPropertyP", "init"]
 - ["7SwiftUI15DynamicPropertyP", "wrappedValue"]
-- ["7SwiftUI17EnvironmentObjectV", "init"]
 - !private ["SQ", "init"]
 - !private ["SQ", "tabItem"]
 - !private ["7SwiftUI5ImageV", "init"]
@@ -108,7 +105,6 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "tag"]
 - !private ["7SwiftUI4ViewP", "watchTimer"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
-- ["35DispatchSourceTimerSwiftUIReloadBug05WatchC0C", "deinit"]
 - !private ["7SwiftUI16_PreviewProviderP", "ContentView"]
 - ["7SwiftUI16_PreviewProviderP", "Previews"]
 - ["7SwiftUI16_PreviewProviderP", ""]
@@ -121,7 +117,6 @@ depends-nominal:
 - "35DispatchSourceTimerSwiftUIReloadBug11ContentViewV"
 - "35DispatchSourceTimerSwiftUIReloadBug20ContentView_PreviewsV"
 - "7SwiftUI15DynamicPropertyP"
-- "7SwiftUI17EnvironmentObjectV"
 - !private "SQ"
 - !private "7SwiftUI5ImageV"
 - !private "35DispatchSourceTimerSwiftUIReloadBug06LaunchC4ViewV"
@@ -132,7 +127,6 @@ depends-nominal:
 - !private "35DispatchSourceTimerSwiftUIReloadBug0C4ViewV"
 - "7SwiftUI4ViewP"
 - !private "7SwiftUI11ViewBuilderV"
-- "35DispatchSourceTimerSwiftUIReloadBug05WatchC0C"
 - "7SwiftUI16_PreviewProviderP"
 depends-dynamic-lookup:
 depends-external:
@@ -1423,4 +1417,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "4681b19ec0cdecad68a2217098f61a9f"
+interface-hash: "6f3dc7636936b0336d9157984e7089f6"

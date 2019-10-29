@@ -9,23 +9,34 @@
 import SwiftUI
 
 struct TimerView: View {
+
+    @EnvironmentObject  var timerManager: TimerManager
+
+    @State var timerDisplayString: String = "0:00"
     
-
-    @EnvironmentObject  var watchTimer: WatchTimer
-
+    func setTimerEventHandler() {
+        
+        self.timerManager.eventHandler = { counter in
+            DispatchQueue.main.async {
+                self.timerDisplayString = TimerManager.convertCountToTimeString(counter: counter)
+            }
+        }
+    }
+    
     var body: some View {
         VStack {
                  
               HStack {
                 VStack {
                     Text("Timer View").font(.headline).padding()
-                     Text(self.watchTimer.timeDisplayString).onTapGesture {
-                        if self.watchTimer.paused == false {
-                            self.watchTimer.pause()
+                    
+                     Text(self.timerDisplayString).onTapGesture {
+                        if self.timerManager.paused == false {
+                            self.timerManager.pause()
                         } else {
-                            self.watchTimer.start()
+                            self.timerManager.start()
                         }
-                        
+
                     }
                     
                 }
@@ -33,9 +44,15 @@ struct TimerView: View {
             }
         }.onAppear(perform: {
            
-            if self.self.watchTimer.isActive == false {
-                self.watchTimer.start()
+            if self.timerManager.isActive == false {
+
+                self.timerManager.start()
+                
             }
+            
+            self.timerDisplayString = TimerManager.convertCountToTimeString(counter: self.timerManager.counter)
+            
+            self.setTimerEventHandler()
             
         })
     }

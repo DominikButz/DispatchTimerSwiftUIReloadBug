@@ -1,171 +1,136 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "TimerView"
+- "LaunchTimerView"
 provides-nominal:
-- "35DispatchSourceTimerSwiftUIReloadBug0C4ViewV"
+- "35DispatchSourceTimerSwiftUIReloadBug06LaunchC4ViewV"
 provides-member:
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", ""]
+- ["35DispatchSourceTimerSwiftUIReloadBug06LaunchC4ViewV", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "=="
-- "AssignmentPrecedence"
-- "BooleanLiteralType"
-- !private "DispatchQueue"
-- "EnvironmentObject"
-- !private "HStack"
-- "State"
-- "String"
-- "StringLiteralType"
+- !private "AssignmentPrecedence"
+- "Binding"
+- "Bool"
+- !private "BooleanLiteralType"
+- !private "Button"
+- !private "Capsule"
+- !private "Color"
+- !private "FloatLiteralType"
+- "LaunchTimerView"
+- !private "NavigationView"
+- !private "StringLiteralType"
 - !private "Text"
-- "TimerManager"
-- "TimerView"
 - !private "VStack"
 - "View"
 depends-member:
-- !private ["s7CVarArgP", "async"]
-- !private ["s7CVarArgP", "main"]
-- !private ["s28CustomDebugStringConvertibleP", "async"]
+- !private ["7SwiftUI10AnimatableP", "init"]
+- !private ["7SwiftUI6ButtonV", "init"]
+- !private ["7SwiftUI7CapsuleV", "init"]
+- !private ["7SwiftUI5ColorV", "accentColor"]
+- !private ["7SwiftUI5ColorV", "opacity"]
+- !private ["s28CustomDebugStringConvertibleP", "accentColor"]
 - !private ["s28CustomDebugStringConvertibleP", "headline"]
-- !private ["s28CustomDebugStringConvertibleP", "main"]
+- !private ["s17CustomReflectableP", "accentColor"]
 - !private ["s17CustomReflectableP", "headline"]
-- !private ["s23CustomStringConvertibleP", "async"]
-- !private ["s23CustomStringConvertibleP", "main"]
+- !private ["s23CustomStringConvertibleP", "accentColor"]
+- !private ["s23CustomStringConvertibleP", "opacity"]
+- !private ["Se", "accentColor"]
 - !private ["Se", "headline"]
-- !private ["So18OS_dispatch_objectC", "async"]
-- !private ["So18OS_dispatch_objectC", "main"]
-- !private ["So17OS_dispatch_queueC", "async"]
-- !private ["So17OS_dispatch_queueC", "main"]
-- ["7SwiftUI15DynamicPropertyP", "init"]
-- ["7SwiftUI15DynamicPropertyP", "wrappedValue"]
+- !private ["SE", "accentColor"]
 - !private ["SE", "headline"]
-- ["7SwiftUI17EnvironmentObjectV", "init"]
-- !private ["SQ", "async"]
+- !private ["SQ", "accentColor"]
+- !private ["SQ", "background"]
 - !private ["SQ", "font"]
 - !private ["SQ", "headline"]
 - !private ["SQ", "init"]
-- !private ["SQ", "main"]
-- !private ["SQ", "onTapGesture"]
-- !private ["SQ", "padding"]
+- !private ["SQ", "opacity"]
+- !private ["s23ExpressibleByNilLiteralP", "accentColor"]
 - !private ["s23ExpressibleByNilLiteralP", "headline"]
 - !private ["7SwiftUI4FontV", "headline"]
+- !private ["7SwiftUI7GestureP", "accentColor"]
 - !private ["7SwiftUI7GestureP", "headline"]
-- !private ["7SwiftUI6HStackV", "init"]
-- !private ["SH", "async"]
+- !private ["SH", "accentColor"]
 - !private ["SH", "headline"]
-- !private ["SH", "main"]
-- !private ["So8NSObjectC", "async"]
-- !private ["So8NSObjectC", "main"]
-- !private ["So8NSObjectP", "async"]
-- !private ["So8NSObjectP", "main"]
-- !private ["So9OS_objectC", "async"]
-- !private ["So9OS_objectC", "main"]
-- !private ["7Combine16ObservableObjectP", "convertCountToTimeString"]
-- !private ["7Combine16ObservableObjectP", "counter"]
-- !private ["7Combine16ObservableObjectP", "eventHandler"]
-- !private ["7Combine16ObservableObjectP", "isActive"]
-- !private ["7Combine16ObservableObjectP", "pause"]
-- !private ["7Combine16ObservableObjectP", "paused"]
-- !private ["7Combine16ObservableObjectP", "start"]
+- !private ["SH", "opacity"]
+- !private ["7SwiftUI15InsettableShapeP", "init"]
+- ["35DispatchSourceTimerSwiftUIReloadBug06LaunchC4ViewV", "$timerViewPresenting"]
+- ["35DispatchSourceTimerSwiftUIReloadBug06LaunchC4ViewV", "Binding"]
+- ["35DispatchSourceTimerSwiftUIReloadBug06LaunchC4ViewV", "Body"]
+- ["35DispatchSourceTimerSwiftUIReloadBug06LaunchC4ViewV", "Bool"]
+- !private ["35DispatchSourceTimerSwiftUIReloadBug06LaunchC4ViewV", "Button"]
+- !private ["35DispatchSourceTimerSwiftUIReloadBug06LaunchC4ViewV", "Capsule"]
+- !private ["35DispatchSourceTimerSwiftUIReloadBug06LaunchC4ViewV", "Color"]
+- !private ["35DispatchSourceTimerSwiftUIReloadBug06LaunchC4ViewV", "NavigationView"]
+- !private ["35DispatchSourceTimerSwiftUIReloadBug06LaunchC4ViewV", "Text"]
+- !private ["35DispatchSourceTimerSwiftUIReloadBug06LaunchC4ViewV", "VStack"]
+- ["35DispatchSourceTimerSwiftUIReloadBug06LaunchC4ViewV", "View"]
+- ["35DispatchSourceTimerSwiftUIReloadBug06LaunchC4ViewV", "_Default_Body"]
+- ["35DispatchSourceTimerSwiftUIReloadBug06LaunchC4ViewV", "_makeView"]
+- ["35DispatchSourceTimerSwiftUIReloadBug06LaunchC4ViewV", "_makeViewList"]
+- !private ["35DispatchSourceTimerSwiftUIReloadBug06LaunchC4ViewV", "_timerViewPresenting"]
+- ["35DispatchSourceTimerSwiftUIReloadBug06LaunchC4ViewV", "body"]
+- ["35DispatchSourceTimerSwiftUIReloadBug06LaunchC4ViewV", "deinit"]
+- ["35DispatchSourceTimerSwiftUIReloadBug06LaunchC4ViewV", "init"]
+- ["35DispatchSourceTimerSwiftUIReloadBug06LaunchC4ViewV", "timerViewPresenting"]
+- !private ["7SwiftUI14NavigationViewV", "init"]
+- !private ["Sq", "accentColor"]
 - !private ["Sq", "headline"]
-- !private ["7Combine9SchedulerP", "async"]
-- !private ["7Combine9SchedulerP", "main"]
-- ["7SwiftUI5StateV", "init"]
-- ["7SwiftUI5StateV", "wrappedValue"]
+- !private ["7SwiftUI5ShapeP", "init"]
+- !private ["7SwiftUI10ShapeStyleP", "accentColor"]
+- !private ["7SwiftUI10ShapeStyleP", "opacity"]
+- !private ["7SwiftUI4TextV", "background"]
 - !private ["7SwiftUI4TextV", "font"]
 - !private ["7SwiftUI4TextV", "init"]
-- !private ["7SwiftUI4TextV", "onTapGesture"]
-- !private ["7SwiftUI4TextV", "padding"]
-- !private ["35DispatchSourceTimerSwiftUIReloadBug0C7ManagerC", "convertCountToTimeString"]
-- !private ["35DispatchSourceTimerSwiftUIReloadBug0C7ManagerC", "counter"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C7ManagerC", "deinit"]
-- !private ["35DispatchSourceTimerSwiftUIReloadBug0C7ManagerC", "eventHandler"]
-- !private ["35DispatchSourceTimerSwiftUIReloadBug0C7ManagerC", "isActive"]
-- !private ["35DispatchSourceTimerSwiftUIReloadBug0C7ManagerC", "pause"]
-- !private ["35DispatchSourceTimerSwiftUIReloadBug0C7ManagerC", "paused"]
-- !private ["35DispatchSourceTimerSwiftUIReloadBug0C7ManagerC", "start"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "$timerDisplayString"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "$timerManager"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "Body"]
-- !private ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "DispatchQueue"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "EnvironmentObject"]
-- !private ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "HStack"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "State"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "String"]
-- !private ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "Text"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "TimerManager"]
-- !private ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "VStack"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "View"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "_Default_Body"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "_makeView"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "_makeViewList"]
-- !private ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "_timerDisplayString"]
-- !private ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "_timerManager"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "body"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "deinit"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "init"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "setTimerEventHandler"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "timerDisplayString"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "timerManager"]
 - !private ["7SwiftUI6VStackV", "init"]
-- !private ["7SwiftUI6VStackV", "onAppear"]
+- !private ["7SwiftUI6VStackV", "navigationBarTitle"]
 - ["7SwiftUI4ViewP", "Body"]
-- !private ["7SwiftUI4ViewP", "DispatchQueue"]
-- !private ["7SwiftUI4ViewP", "HStack"]
+- !private ["7SwiftUI4ViewP", "Button"]
+- !private ["7SwiftUI4ViewP", "Capsule"]
+- !private ["7SwiftUI4ViewP", "Color"]
+- !private ["7SwiftUI4ViewP", "NavigationView"]
 - !private ["7SwiftUI4ViewP", "Text"]
-- !private ["7SwiftUI4ViewP", "TimerManager"]
 - !private ["7SwiftUI4ViewP", "VStack"]
 - ["7SwiftUI4ViewP", ""]
 - ["7SwiftUI4ViewP", "_Default_Body"]
 - ["7SwiftUI4ViewP", "_makeView"]
 - ["7SwiftUI4ViewP", "_makeViewList"]
+- !private ["7SwiftUI4ViewP", "accentColor"]
+- !private ["7SwiftUI4ViewP", "background"]
 - ["7SwiftUI4ViewP", "body"]
+- !private ["7SwiftUI4ViewP", "clipShape"]
 - !private ["7SwiftUI4ViewP", "font"]
+- !private ["7SwiftUI4ViewP", "foregroundColor"]
 - !private ["7SwiftUI4ViewP", "headline"]
 - !private ["7SwiftUI4ViewP", "init"]
-- !private ["7SwiftUI4ViewP", "onAppear"]
-- !private ["7SwiftUI4ViewP", "onTapGesture"]
+- !private ["7SwiftUI4ViewP", "navigationBarTitle"]
+- !private ["7SwiftUI4ViewP", "opacity"]
 - !private ["7SwiftUI4ViewP", "padding"]
-- !private ["7SwiftUI4ViewP", "setTimerEventHandler"]
-- !private ["7SwiftUI4ViewP", "timerDisplayString"]
-- !private ["7SwiftUI4ViewP", "timerManager"]
-- !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "async"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "async"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "main"]
+- !private ["7SwiftUI4ViewP", "timerViewPresenting"]
+- !private ["s21_ObjectiveCBridgeableP", "accentColor"]
 - !private ["s21_ObjectiveCBridgeableP", "headline"]
 depends-nominal:
-- !private "s7CVarArgP"
+- !private "7SwiftUI10AnimatableP"
+- !private "7SwiftUI6ButtonV"
+- !private "7SwiftUI7CapsuleV"
+- !private "7SwiftUI5ColorV"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
 - !private "Se"
-- !private "So18OS_dispatch_objectC"
-- !private "So17OS_dispatch_queueC"
-- "7SwiftUI15DynamicPropertyP"
 - !private "SE"
-- "7SwiftUI17EnvironmentObjectV"
 - !private "SQ"
 - !private "s23ExpressibleByNilLiteralP"
 - !private "7SwiftUI4FontV"
 - !private "7SwiftUI7GestureP"
-- !private "7SwiftUI6HStackV"
 - !private "SH"
-- !private "So8NSObjectC"
-- !private "So8NSObjectP"
-- !private "So9OS_objectC"
-- !private "7Combine16ObservableObjectP"
+- !private "7SwiftUI15InsettableShapeP"
+- "35DispatchSourceTimerSwiftUIReloadBug06LaunchC4ViewV"
+- !private "7SwiftUI14NavigationViewV"
 - !private "Sq"
-- !private "7Combine9SchedulerP"
-- "7SwiftUI5StateV"
+- !private "7SwiftUI5ShapeP"
+- !private "7SwiftUI10ShapeStyleP"
 - !private "7SwiftUI4TextV"
-- "35DispatchSourceTimerSwiftUIReloadBug0C7ManagerC"
-- "35DispatchSourceTimerSwiftUIReloadBug0C4ViewV"
 - !private "7SwiftUI6VStackV"
 - "7SwiftUI4ViewP"
-- !private "7SwiftUI11ViewBuilderV"
-- !private "10Foundation27_KeyValueCodingAndObservingP"
-- !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
 - !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
@@ -1456,4 +1421,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "9a6d3069a0b93c941f4d787fabf9ea74"
+interface-hash: "b1502562677ffa5bd8519dc8ab458635"

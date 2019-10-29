@@ -10,18 +10,18 @@ import Foundation
 import SwiftUI
 import Combine
 
-class WatchTimer: ObservableObject {
+class TimerManager:ObservableObject {
     
    private var sourceTimer: DispatchSourceTimer?
 
     private let queue = DispatchQueue.init(label: "stopwatch.timer", qos: .background, attributes: [], autoreleaseFrequency: .never, target: .global())
-    private var counter: Int = 0  // seconds
+    var counter: Int = 0  // seconds
 
     var endDate: Date?
     var duration: TimeInterval?
     
-    @Published var timeDisplayString = "0:00"
-    
+    var eventHandler: ((Int) -> Void)?
+
     var paused = false
     
    var isActive: Bool {
@@ -62,7 +62,7 @@ class WatchTimer: ObservableObject {
       }
      
      private func reset() {
-         self.timeDisplayString = "0:00"
+       //  self.timeDisplayString = "0:00"
          self.counter = 0
     
      }
@@ -75,10 +75,13 @@ class WatchTimer: ObservableObject {
     }
     
     private func resumeTimer() {
-        self.sourceTimer?.setEventHandler { [weak self] in
-          //  self.eventHandler = {
-                self?.updateTimer()
-          //  }
+        self.sourceTimer?.setEventHandler {  [weak self] in
+           
+            guard let strongSelf = self else {return}
+            
+            strongSelf.counter += 1
+            
+            strongSelf.eventHandler?(strongSelf.counter)
         }
      
         self.sourceTimer?.schedule(deadline: .now(),
@@ -88,17 +91,14 @@ class WatchTimer: ObservableObject {
     
     private func updateTimer() {
         self.counter += 1
-        
-        DispatchQueue.main.async {
-            self.timeDisplayString = WatchTimer.convertCountToTimeString(counter: self.counter)
-        }
+
     }
     
 
 }
 
 
-extension WatchTimer {
+extension TimerManager {
     static func convertCountToTimeString(counter: Int) -> String {
        
         let seconds = counter % 60

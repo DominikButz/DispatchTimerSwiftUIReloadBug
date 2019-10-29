@@ -11,7 +11,7 @@ import SwiftUI
 struct ContentView: View {
     
 
-    @EnvironmentObject  var watchTimer: WatchTimer
+    @EnvironmentObject  var watchTimer: TimerManager
     
   
     @State private var timerViewPresenting = false

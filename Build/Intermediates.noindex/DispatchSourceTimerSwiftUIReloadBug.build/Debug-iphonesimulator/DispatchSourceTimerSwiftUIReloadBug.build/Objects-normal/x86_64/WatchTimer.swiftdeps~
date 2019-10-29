@@ -1,172 +1,390 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "TimerView"
+- "WatchTimer"
 provides-nominal:
-- "35DispatchSourceTimerSwiftUIReloadBug0C4ViewV"
+- "35DispatchSourceTimerSwiftUIReloadBug05WatchC0C"
 provides-member:
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", ""]
+- ["35DispatchSourceTimerSwiftUIReloadBug05WatchC0C", ""]
+- ["35DispatchSourceTimerSwiftUIReloadBug05WatchC0C", "convertCountToTimeString"]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "!="
+- !private "%"
+- !private "*"
+- !private "+"
+- !private "+="
+- !private "/"
+- !private "<"
 - !private "=="
 - "AssignmentPrecedence"
+- "Bool"
 - "BooleanLiteralType"
-- !private "DispatchQueue"
-- "EnvironmentObject"
-- !private "HStack"
-- "State"
+- "Date"
+- "DispatchQueue"
+- !private "DispatchSource"
+- "DispatchSourceTimer"
+- !private "Double"
+- "FloatLiteralType"
+- "Int"
+- "IntegerLiteralType"
+- "ObservableObject"
 - "String"
 - "StringLiteralType"
-- !private "Text"
-- "TimerManager"
-- "TimerView"
-- !private "VStack"
-- "View"
+- "TimeInterval"
+- !private "UnicodeScalarType"
+- "Void"
+- "WatchTimer"
 depends-member:
-- !private ["s7CVarArgP", "async"]
-- !private ["s7CVarArgP", "main"]
-- !private ["s28CustomDebugStringConvertibleP", "async"]
-- !private ["s28CustomDebugStringConvertibleP", "headline"]
-- !private ["s28CustomDebugStringConvertibleP", "main"]
-- !private ["s17CustomReflectableP", "headline"]
-- !private ["s23CustomStringConvertibleP", "async"]
-- !private ["s23CustomStringConvertibleP", "main"]
-- !private ["Se", "headline"]
-- !private ["So18OS_dispatch_objectC", "async"]
-- !private ["So18OS_dispatch_objectC", "main"]
-- !private ["So17OS_dispatch_queueC", "async"]
-- !private ["So17OS_dispatch_queueC", "main"]
-- ["7SwiftUI15DynamicPropertyP", "init"]
-- ["7SwiftUI15DynamicPropertyP", "wrappedValue"]
-- !private ["SE", "headline"]
-- ["7SwiftUI17EnvironmentObjectV", "init"]
-- !private ["SQ", "async"]
-- !private ["SQ", "font"]
-- !private ["SQ", "headline"]
-- !private ["SQ", "init"]
-- !private ["SQ", "main"]
-- !private ["SQ", "onTapGesture"]
-- !private ["SQ", "padding"]
-- !private ["s23ExpressibleByNilLiteralP", "headline"]
-- !private ["7SwiftUI4FontV", "headline"]
-- !private ["7SwiftUI7GestureP", "headline"]
-- !private ["7SwiftUI6HStackV", "init"]
-- !private ["SH", "async"]
-- !private ["SH", "headline"]
-- !private ["SH", "main"]
-- !private ["So8NSObjectC", "async"]
-- !private ["So8NSObjectC", "main"]
-- !private ["So8NSObjectP", "async"]
-- !private ["So8NSObjectP", "main"]
-- !private ["So9OS_objectC", "async"]
-- !private ["So9OS_objectC", "main"]
-- !private ["7Combine16ObservableObjectP", "convertCountToTimeString"]
+- !private ["s18AdditiveArithmeticP", "init"]
+- ["So17OS_dispatch_queueC8DispatchE20AutoreleaseFrequencyO", "never"]
+- !private ["SK", "dropFirst"]
+- !private ["SK", "init"]
+- !private ["SB", "init"]
+- !private ["s7CVarArgP", "TimerFlags"]
+- !private ["s7CVarArgP", "dropFirst"]
+- ["s7CVarArgP", "global"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "makeTimerSource"]
+- !private ["Sl", "dropFirst"]
+- !private ["Sl", "init"]
+- !private ["SL", "dropFirst"]
+- !private ["SL", "init"]
+- !private ["SL", "now"]
+- !private ["s28CustomDebugStringConvertibleP", "TimerFlags"]
+- !private ["s28CustomDebugStringConvertibleP", "dropFirst"]
+- ["s28CustomDebugStringConvertibleP", "global"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "makeTimerSource"]
+- !private ["s17CustomReflectableP", "dropFirst"]
+- ["s17CustomReflectableP", "global"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "TimerFlags"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "dropFirst"]
+- ["s23CustomStringConvertibleP", "global"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "makeTimerSource"]
+- !private ["10Foundation4DateV", "init"]
+- !private ["Se", "dropFirst"]
+- ["Se", "global"]
+- !private ["Se", "init"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["So18OS_dispatch_objectC", "TimerFlags"]
+- ["So18OS_dispatch_objectC", "global"]
+- ["So18OS_dispatch_objectC", "init"]
+- !private ["So18OS_dispatch_objectC", "makeTimerSource"]
+- ["8Dispatch0A3QoSV", "background"]
+- ["So17OS_dispatch_queueC", "global"]
+- ["So17OS_dispatch_queueC", "init"]
+- !private ["So18OS_dispatch_sourceC", "TimerFlags"]
+- !private ["So18OS_dispatch_sourceC", "makeTimerSource"]
+- !private ["So24OS_dispatch_source_vnodeP", "TimerFlags"]
+- !private ["So24OS_dispatch_source_vnodeP", "makeTimerSource"]
+- !private ["So28OS_dispatch_source_mach_recvP", "TimerFlags"]
+- !private ["So28OS_dispatch_source_mach_recvP", "makeTimerSource"]
+- !private ["So28OS_dispatch_source_mach_sendP", "TimerFlags"]
+- !private ["So28OS_dispatch_source_mach_sendP", "makeTimerSource"]
+- !private ["So33OS_dispatch_source_memorypressureP", "TimerFlags"]
+- !private ["So33OS_dispatch_source_memorypressureP", "makeTimerSource"]
+- !private ["So23OS_dispatch_source_procP", "TimerFlags"]
+- !private ["So23OS_dispatch_source_procP", "makeTimerSource"]
+- !private ["So18OS_dispatch_sourceP", "TimerFlags"]
+- !private ["So18OS_dispatch_sourceP", "cancel"]
+- !private ["So18OS_dispatch_sourceP", "makeTimerSource"]
+- !private ["So18OS_dispatch_sourceP", "resume"]
+- !private ["So18OS_dispatch_sourceP", "schedule"]
+- !private ["So18OS_dispatch_sourceP", "setEventHandler"]
+- !private ["So18OS_dispatch_sourceP", "suspend"]
+- !private ["So23OS_dispatch_source_readP", "TimerFlags"]
+- !private ["So23OS_dispatch_source_readP", "makeTimerSource"]
+- !private ["So25OS_dispatch_source_signalP", "TimerFlags"]
+- !private ["So25OS_dispatch_source_signalP", "makeTimerSource"]
+- !private ["So24OS_dispatch_source_timerP", "TimerFlags"]
+- !private ["So24OS_dispatch_source_timerP", "cancel"]
+- !private ["So24OS_dispatch_source_timerP", "makeTimerSource"]
+- !private ["So24OS_dispatch_source_timerP", "resume"]
+- !private ["So24OS_dispatch_source_timerP", "schedule"]
+- !private ["So24OS_dispatch_source_timerP", "setEventHandler"]
+- !private ["So24OS_dispatch_source_timerP", "suspend"]
+- !private ["So27OS_dispatch_source_data_addP", "TimerFlags"]
+- !private ["So27OS_dispatch_source_data_addP", "makeTimerSource"]
+- !private ["So26OS_dispatch_source_data_orP", "TimerFlags"]
+- !private ["So26OS_dispatch_source_data_orP", "makeTimerSource"]
+- !private ["So31OS_dispatch_source_data_replaceP", "TimerFlags"]
+- !private ["So31OS_dispatch_source_data_replaceP", "makeTimerSource"]
+- !private ["So24OS_dispatch_source_writeP", "TimerFlags"]
+- !private ["So24OS_dispatch_source_writeP", "makeTimerSource"]
+- !private ["8Dispatch0A4TimeV", "now"]
+- !private ["Sd", "init"]
+- !private ["SE", "dropFirst"]
+- ["SE", "global"]
+- !private ["SE", "init"]
+- !private ["SQ", "TimerFlags"]
+- ["SQ", "background"]
+- !private ["SQ", "dropFirst"]
+- ["SQ", "global"]
+- ["SQ", "init"]
+- !private ["SQ", "makeTimerSource"]
+- ["SQ", "never"]
+- !private ["SQ", "now"]
+- !private ["SQ", "strict"]
+- !private ["s25ExpressibleByArrayLiteralP", "strict"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "dropFirst"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- ["s23ExpressibleByNilLiteralP", "global"]
+- !private ["s32ExpressibleByStringInterpolationP", "dropFirst"]
+- !private ["s32ExpressibleByStringInterpolationP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "dropFirst"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "dropFirst"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SF", "init"]
+- ["7SwiftUI7GestureP", "global"]
+- !private ["SH", "TimerFlags"]
+- !private ["SH", "dropFirst"]
+- ["SH", "global"]
+- ["SH", "init"]
+- !private ["SH", "makeTimerSource"]
+- ["SH", "never"]
+- !private ["s25LosslessStringConvertibleP", "dropFirst"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "dropFirst"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "dropFirst"]
+- !private ["So9NSCopyingP", "dropFirst"]
+- !private ["So21NSItemProviderReadingP", "dropFirst"]
+- !private ["So21NSItemProviderWritingP", "dropFirst"]
+- !private ["So16NSMutableCopyingP", "dropFirst"]
+- !private ["So8NSObjectC", "TimerFlags"]
+- !private ["So8NSObjectC", "dropFirst"]
+- ["So8NSObjectC", "global"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "makeTimerSource"]
+- !private ["So8NSObjectP", "TimerFlags"]
+- !private ["So8NSObjectP", "cancel"]
+- !private ["So8NSObjectP", "dropFirst"]
+- ["So8NSObjectP", "global"]
+- ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "makeTimerSource"]
+- !private ["So8NSObjectP", "resume"]
+- !private ["So8NSObjectP", "schedule"]
+- !private ["So8NSObjectP", "setEventHandler"]
+- !private ["So8NSObjectP", "suspend"]
+- !private ["So14NSSecureCodingP", "dropFirst"]
+- !private ["So8NSStringC", "dropFirst"]
+- !private ["Sj", "init"]
+- !private ["So9OS_objectC", "TimerFlags"]
+- ["So9OS_objectC", "global"]
+- ["So9OS_objectC", "init"]
+- !private ["So9OS_objectC", "makeTimerSource"]
+- !private ["7Combine16ObservableObjectP", "Date"]
+- ["7Combine16ObservableObjectP", "DispatchQueue"]
+- !private ["7Combine16ObservableObjectP", "DispatchSource"]
+- !private ["7Combine16ObservableObjectP", "Double"]
+- ["7Combine16ObservableObjectP", "ObjectWillChangePublisher"]
+- !private ["7Combine16ObservableObjectP", "String"]
+- !private ["7Combine16ObservableObjectP", "TimeInterval"]
+- ["7Combine16ObservableObjectP", ""]
+- ["7Combine16ObservableObjectP", "_Default_ObjectWillChangePublisher"]
 - !private ["7Combine16ObservableObjectP", "counter"]
+- !private ["7Combine16ObservableObjectP", "duration"]
+- !private ["7Combine16ObservableObjectP", "endDate"]
 - !private ["7Combine16ObservableObjectP", "eventHandler"]
-- !private ["7Combine16ObservableObjectP", "isActive"]
-- !private ["7Combine16ObservableObjectP", "pause"]
+- ["7Combine16ObservableObjectP", "objectWillChange"]
 - !private ["7Combine16ObservableObjectP", "paused"]
-- !private ["7Combine16ObservableObjectP", "start"]
-- !private ["Sq", "headline"]
-- !private ["7Combine9SchedulerP", "async"]
-- !private ["7Combine9SchedulerP", "main"]
-- ["7SwiftUI5StateV", "init"]
-- ["7SwiftUI5StateV", "wrappedValue"]
-- !private ["7SwiftUI4TextV", "font"]
-- !private ["7SwiftUI4TextV", "init"]
-- !private ["7SwiftUI4TextV", "onTapGesture"]
-- !private ["7SwiftUI4TextV", "padding"]
-- !private ["35DispatchSourceTimerSwiftUIReloadBug0C7ManagerC", "convertCountToTimeString"]
-- !private ["35DispatchSourceTimerSwiftUIReloadBug0C7ManagerC", "counter"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C7ManagerC", "deinit"]
-- !private ["35DispatchSourceTimerSwiftUIReloadBug0C7ManagerC", "eventHandler"]
-- !private ["35DispatchSourceTimerSwiftUIReloadBug0C7ManagerC", "isActive"]
-- !private ["35DispatchSourceTimerSwiftUIReloadBug0C7ManagerC", "pause"]
-- !private ["35DispatchSourceTimerSwiftUIReloadBug0C7ManagerC", "paused"]
-- !private ["35DispatchSourceTimerSwiftUIReloadBug0C7ManagerC", "start"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "$timerDisplayString"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "$timerManager"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "Body"]
-- !private ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "DispatchQueue"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "EnvironmentObject"]
-- !private ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "HStack"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "State"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "String"]
-- !private ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "Text"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "TimerManager"]
-- !private ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "VStack"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "View"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "_Default_Body"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "_makeView"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "_makeViewList"]
-- !private ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "_timerDisplayString"]
-- !private ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "_timerManager"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "body"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "deinit"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "init"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "setTimerEventHandler"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "timerDisplayString"]
-- ["35DispatchSourceTimerSwiftUIReloadBug0C4ViewV", "timerManager"]
-- !private ["7SwiftUI6VStackV", "init"]
-- !private ["7SwiftUI6VStackV", "onAppear"]
-- ["7SwiftUI4ViewP", "Body"]
-- !private ["7SwiftUI4ViewP", "DispatchQueue"]
-- !private ["7SwiftUI4ViewP", "HStack"]
-- !private ["7SwiftUI4ViewP", "Text"]
-- !private ["7SwiftUI4ViewP", "TimerManager"]
-- !private ["7SwiftUI4ViewP", "VStack"]
-- ["7SwiftUI4ViewP", ""]
-- ["7SwiftUI4ViewP", "_Default_Body"]
-- ["7SwiftUI4ViewP", "_makeView"]
-- ["7SwiftUI4ViewP", "_makeViewList"]
-- ["7SwiftUI4ViewP", "body"]
-- !private ["7SwiftUI4ViewP", "font"]
-- !private ["7SwiftUI4ViewP", "headline"]
-- !private ["7SwiftUI4ViewP", "init"]
-- !private ["7SwiftUI4ViewP", "onAppear"]
-- !private ["7SwiftUI4ViewP", "onTapGesture"]
-- !private ["7SwiftUI4ViewP", "padding"]
-- !private ["7SwiftUI4ViewP", "setTimerEventHandler"]
-- !private ["7SwiftUI4ViewP", "timerDisplayString"]
-- !private ["7SwiftUI4ViewP", "timerManager"]
-- !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "async"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "async"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "main"]
-- !private ["s21_ObjectiveCBridgeableP", "headline"]
+- !private ["7Combine16ObservableObjectP", "queue"]
+- !private ["7Combine16ObservableObjectP", "reset"]
+- !private ["7Combine16ObservableObjectP", "resumeTimer"]
+- !private ["7Combine16ObservableObjectP", "sourceTimer"]
+- !private ["7Combine16ObservableObjectP", "startTimer"]
+- !private ["s9OptionSetP", "strict"]
+- ["Sq", "global"]
+- !private ["Sm", "dropFirst"]
+- !private ["Sm", "init"]
+- !private ["SY", "strict"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["s10SIMDScalarP", "init"]
+- ["7Combine9SchedulerP", "global"]
+- ["7Combine9SchedulerP", "init"]
+- !private ["ST", "dropFirst"]
+- !private ["ST", "init"]
+- !private ["s10SetAlgebraP", "strict"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["Sx", "init"]
+- !private ["SS", "dropFirst"]
+- !private ["SS", "init"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["Sy", "dropFirst"]
+- !private ["Sy", "init"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "dropFirst"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "dropFirst"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So18OS_dispatch_sourceC8DispatchE10TimerFlagsV", "strict"]
+- !private ["7SwiftUI16VectorArithmeticP", "init"]
+- ["7SwiftUI4ViewP", "global"]
+- ["35DispatchSourceTimerSwiftUIReloadBug05WatchC0C", "Bool"]
+- ["35DispatchSourceTimerSwiftUIReloadBug05WatchC0C", "Date"]
+- ["35DispatchSourceTimerSwiftUIReloadBug05WatchC0C", "DispatchQueue"]
+- !private ["35DispatchSourceTimerSwiftUIReloadBug05WatchC0C", "DispatchSource"]
+- ["35DispatchSourceTimerSwiftUIReloadBug05WatchC0C", "DispatchSourceTimer"]
+- !private ["35DispatchSourceTimerSwiftUIReloadBug05WatchC0C", "Double"]
+- ["35DispatchSourceTimerSwiftUIReloadBug05WatchC0C", "Int"]
+- ["35DispatchSourceTimerSwiftUIReloadBug05WatchC0C", "ObjectWillChangePublisher"]
+- ["35DispatchSourceTimerSwiftUIReloadBug05WatchC0C", "String"]
+- ["35DispatchSourceTimerSwiftUIReloadBug05WatchC0C", "TimeInterval"]
+- ["35DispatchSourceTimerSwiftUIReloadBug05WatchC0C", "Void"]
+- ["35DispatchSourceTimerSwiftUIReloadBug05WatchC0C", "_Default_ObjectWillChangePublisher"]
+- ["35DispatchSourceTimerSwiftUIReloadBug05WatchC0C", "convertCountToTimeString"]
+- !private ["35DispatchSourceTimerSwiftUIReloadBug05WatchC0C", "counter"]
+- ["35DispatchSourceTimerSwiftUIReloadBug05WatchC0C", "deinit"]
+- ["35DispatchSourceTimerSwiftUIReloadBug05WatchC0C", "duration"]
+- ["35DispatchSourceTimerSwiftUIReloadBug05WatchC0C", "endDate"]
+- ["35DispatchSourceTimerSwiftUIReloadBug05WatchC0C", "eventHandler"]
+- ["35DispatchSourceTimerSwiftUIReloadBug05WatchC0C", "finish"]
+- ["35DispatchSourceTimerSwiftUIReloadBug05WatchC0C", "init"]
+- ["35DispatchSourceTimerSwiftUIReloadBug05WatchC0C", "isActive"]
+- ["35DispatchSourceTimerSwiftUIReloadBug05WatchC0C", "objectWillChange"]
+- ["35DispatchSourceTimerSwiftUIReloadBug05WatchC0C", "pause"]
+- ["35DispatchSourceTimerSwiftUIReloadBug05WatchC0C", "paused"]
+- !private ["35DispatchSourceTimerSwiftUIReloadBug05WatchC0C", "queue"]
+- !private ["35DispatchSourceTimerSwiftUIReloadBug05WatchC0C", "reset"]
+- !private ["35DispatchSourceTimerSwiftUIReloadBug05WatchC0C", "resumeTimer"]
+- !private ["35DispatchSourceTimerSwiftUIReloadBug05WatchC0C", "sourceTimer"]
+- ["35DispatchSourceTimerSwiftUIReloadBug05WatchC0C", "start"]
+- !private ["35DispatchSourceTimerSwiftUIReloadBug05WatchC0C", "startTimer"]
+- !private ["35DispatchSourceTimerSwiftUIReloadBug05WatchC0C", "updateTimer"]
+- !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s22_CVarArgPassedAsDoubleP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "dropFirst"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "dropFirst"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "dropFirst"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "dropFirst"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["7SwiftUI18_FormatSpecifiableP", "init"]
+- !private ["s19_HasContiguousBytesP", "dropFirst"]
+- !private ["s19_HasContiguousBytesP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "dropFirst"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "TimerFlags"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dropFirst"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "global"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "makeTimerSource"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "TimerFlags"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dropFirst"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "global"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "makeTimerSource"]
+- !private ["s21_ObjectiveCBridgeableP", "dropFirst"]
+- ["s21_ObjectiveCBridgeableP", "global"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
 depends-nominal:
-- !private "s7CVarArgP"
-- !private "s28CustomDebugStringConvertibleP"
-- !private "s17CustomReflectableP"
-- !private "s23CustomStringConvertibleP"
-- !private "Se"
-- !private "So18OS_dispatch_objectC"
-- !private "So17OS_dispatch_queueC"
-- "7SwiftUI15DynamicPropertyP"
-- !private "SE"
-- "7SwiftUI17EnvironmentObjectV"
-- !private "SQ"
-- !private "s23ExpressibleByNilLiteralP"
-- !private "7SwiftUI4FontV"
-- !private "7SwiftUI7GestureP"
-- !private "7SwiftUI6HStackV"
-- !private "SH"
-- !private "So8NSObjectC"
-- !private "So8NSObjectP"
-- !private "So9OS_objectC"
-- !private "7Combine16ObservableObjectP"
-- !private "Sq"
-- !private "7Combine9SchedulerP"
-- "7SwiftUI5StateV"
-- !private "7SwiftUI4TextV"
-- "35DispatchSourceTimerSwiftUIReloadBug0C7ManagerC"
-- "35DispatchSourceTimerSwiftUIReloadBug0C4ViewV"
-- !private "7SwiftUI6VStackV"
+- !private "s18AdditiveArithmeticP"
+- "So17OS_dispatch_queueC8DispatchE20AutoreleaseFrequencyO"
+- !private "SK"
+- !private "SB"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- "s28CustomDebugStringConvertibleP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "10Foundation4DateV"
+- "Se"
+- !private "s26DefaultStringInterpolationV"
+- "So18OS_dispatch_objectC"
+- "8Dispatch0A3QoSV"
+- "So17OS_dispatch_queueC"
+- !private "So18OS_dispatch_sourceC"
+- !private "So24OS_dispatch_source_vnodeP"
+- !private "So28OS_dispatch_source_mach_recvP"
+- !private "So28OS_dispatch_source_mach_sendP"
+- !private "So33OS_dispatch_source_memorypressureP"
+- !private "So23OS_dispatch_source_procP"
+- !private "So18OS_dispatch_sourceP"
+- !private "So23OS_dispatch_source_readP"
+- !private "So25OS_dispatch_source_signalP"
+- !private "So24OS_dispatch_source_timerP"
+- !private "So27OS_dispatch_source_data_addP"
+- !private "So26OS_dispatch_source_data_orP"
+- !private "So31OS_dispatch_source_data_replaceP"
+- !private "So24OS_dispatch_source_writeP"
+- !private "8Dispatch0A4TimeV"
+- !private "Sd"
+- "SE"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- "s23ExpressibleByNilLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "SF"
+- "7SwiftUI7GestureP"
+- "SH"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "Sj"
+- "So9OS_objectC"
+- "7Combine16ObservableObjectP"
+- !private "s9OptionSetP"
+- "Sq"
+- !private "Sm"
+- !private "SY"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "s10SIMDScalarP"
+- "7Combine9SchedulerP"
+- !private "ST"
+- !private "s10SetAlgebraP"
+- !private "s13SignedNumericP"
+- !private "Sx"
+- !private "SS"
+- !private "s27StringInterpolationProtocolP"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So18OS_dispatch_sourceC8DispatchE10TimerFlagsV"
+- !private "7SwiftUI16VectorArithmeticP"
 - "7SwiftUI4ViewP"
-- !private "7SwiftUI11ViewBuilderV"
-- !private "10Foundation27_KeyValueCodingAndObservingP"
-- !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
-- !private "s21_ObjectiveCBridgeableP"
+- "35DispatchSourceTimerSwiftUIReloadBug05WatchC0C"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s33_ExpressibleByBuiltinFloatLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "7SwiftUI18_FormatSpecifiableP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
@@ -1456,4 +1674,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "9a6d3069a0b93c941f4d787fabf9ea74"
+interface-hash: "bb36248b9db3ab4b0bb5ccf284bcf451"
